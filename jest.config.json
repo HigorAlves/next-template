@@ -1,0 +1,26 @@
+{
+  "bail": 1,
+  "testEnvironment": "jsdom",
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx,tsx,ts}",
+    "!**/node_modules/**",
+    "!docs"
+  ],
+  "coverageDirectory": "coverage",
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "testPathIgnorePatterns": ["/node_modules/", "/.next/"],
+  "moduleNameMapper": {
+    "\\.(scss)$": "identity-obj-proxy",
+    "@/components/(.*)": ["<rootDir>/src/components/$1"],
+    "@/config/(.*)": ["<rootDir>/src/config/$1"],
+    "@/container/(.*)": ["<rootDir>/src/containers/$1"],
+    "@/hooks/(.*)": ["<rootDir>/src/hooks/$1"],
+    "@/pages/(.*)": ["<rootDir>/src/pages/$1"],
+    "@/services/(.*)": ["<rootDir>/src/services/$1"],
+    "@/store/(.*)": ["<rootDir>/src/store/$1"],
+    "@/assets/(.*)": ["<rootDir>/src/assets/$1"],
+    "@/styles/(.*)": ["<rootDir>/src/assets/styles/$1"],
+    "@/test/(.*)": ["<rootDir>/src/tests/$1"],
+    "@/(.*)": ["<rootDir>/src/$1"]
+  }
+}

@@ -1,0 +1,32 @@
+name: CI - Lint
+on:
+  push:
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - '*.md'
+  pull_request:
+    branches:
+      - main
+      - develop
+    paths-ignore:
+      - '*.md'
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2-beta
+        with:
+          node-version: '12'
+          check-latest: true
+      - name: Install Npm Dependencies
+        run: yarn install
+      - name: Eslint
+        run: yarn lint
+      - name: Prettier
+        run: yarn prettier
