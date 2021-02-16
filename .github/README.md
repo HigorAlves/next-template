@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="https://i.imgur.com/VuU1sjM.png" height="100px"/>
-</p>
-
-# Nata.House NextJs Template
+# NextJs Template
 
 ## Useful documentation
 

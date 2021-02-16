@@ -10,10 +10,10 @@ You can test the schemas using this [Google structured data testing tool](https:
   schema={getHomeSchema({
     title: 'NextJs Boilerplate',
     url: 'http://localhost:3000',
-    description: "nata.house's boilerplate for NextJS projects",
+    description: "Template for NextJS projects",
     socialSharingImage:
       'https://avatars2.githubusercontent.com/u/35275557?s=200&v=4',
-    headline: "nata.house's boilerplate for NextJS projects"
+    headline: "Template for NextJS projects"
   })}
 />
 ```
