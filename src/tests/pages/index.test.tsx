@@ -1,8 +1,8 @@
 import React from 'react'
 
 import '@testing-library/jest-dom'
-import styles from '@/assets/styles/Home.module.scss'
-import HomePage from '@/pages/index'
+import styles from '~/assets/styles/Home.module.scss'
+import HomePage from '~/pages/index'
 import { render } from '@testing-library/react'
 
 describe('Home Page', () => {

@@ -37,6 +37,7 @@
     "import/no-unresolved": "off",
     "no-use-before-define": "off",
     "multiline-ternary": "off",
+    "generator-star-spacing": "off",
     "import/order": [
       "error",
       {

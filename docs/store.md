@@ -33,7 +33,7 @@ src/store             // Root folder
 ## Store initialization and hook export `src/store/index.tsx`
 Here that is created the custom hook to access the store data inside the containers components. The store provider is used to pass the data to all the childrens, and since the whole app is wrapped by this provider, you can use the data anywhere you want, just call the `useStore` hook inside your component:
 ```jsx
-import useStore from '@/store'
+import useStore from '~/store'
 
 ...
 
@@ -172,7 +172,7 @@ export type PayloadType = {
 ```
 And it's done! Now you have an array of people and you can add persons to it:
 ```jsx
-import { addPeople } from '@/store/people/actions'
+import { addPeople } from '~/store/people/actions'
 
 ...
 

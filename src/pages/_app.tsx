@@ -1,11 +1,11 @@
 import React from 'react'
 
-import JsonLd from '@/components/JSONLD/Jsonld'
-import { getHomeSchema } from '@/services/schema'
-import { StoreProvider } from '@/store'
-import StateInspectorComponent from '@/store/StateInspector'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
+
+import JsonLd from '~/components/JSONLD/Jsonld'
+import { getHomeSchema } from '~/services/schema'
+import { storeWrapper } from '~/store'
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (
@@ -25,13 +25,10 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
           })}
         />
       </Head>
-      <StateInspectorComponent>
-        <StoreProvider>
-          <Component {...pageProps} />
-        </StoreProvider>
-      </StateInspectorComponent>
+
+      <Component {...pageProps} />
     </>
   )
 }
 
-export default MyApp
+export default storeWrapper.withRedux(MyApp)
