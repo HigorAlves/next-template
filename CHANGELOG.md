@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.0.0 (2021-02-17)
+
+
+### :recycle: Code Refactoring
+
+* new global state management ([5dd45ce](https://github.com/HigorAlves/next-template/commit/5dd45ceedba996eae8aa88cfbf9334434af37159))
+* remove firebase config ([f0bb8c7](https://github.com/HigorAlves/next-template/commit/f0bb8c76095ba5c4c0d4088454440325cf86c91c))
+* sass remoed ([a81d1ef](https://github.com/HigorAlves/next-template/commit/a81d1ef0ed13512bcc61c1a94228b92cadec6301))
+
+
+### :art: Styling
+
+* remove old references ([03b2b6f](https://github.com/HigorAlves/next-template/commit/03b2b6fd798faeb6b51034acf5988642134643f3))
+
+
+### :rocket: Build System
+
+* new version ([9e4104f](https://github.com/HigorAlves/next-template/commit/9e4104f8715b6cc45faf2904734adb344393d286))
+* upgrade project dependencies ([fbd54ca](https://github.com/HigorAlves/next-template/commit/fbd54cae1f5a6e9e380139e66fa25a8dc25d6e93))
+
 ### 0.6.2 (2020-12-03)
 
 ### :art: Styling
