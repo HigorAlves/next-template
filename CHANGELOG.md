@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/HigorAlves/next-template/compare/v2.0.0...v2.1.0) (2021-05-28)
+
+
+### :sparkles: Features
+
+* upgrade of version ([7becb43](https://github.com/HigorAlves/next-template/commit/7becb43767aeb74c1046de1897431f15a5841f8b))
+
 ## [2.0.0](https://github.com/HigorAlves/next-template/compare/v1.0.0...v2.0.0) (2021-05-28)
 
 
