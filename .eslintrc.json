@@ -1,47 +1,56 @@
 {
+  "env": {
+    "es2021": true,
+    "node": true,
+    "jest": true,
+    "browser": true
+  },
   "settings": {
     "react": {
       "version": "detect"
     }
   },
-  "env": {
-    "jest": true,
-    "browser": true,
-    "es2021": true,
-    "node": true
-  },
   "extends": [
-    "plugin:react/recommended",
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:import/typescript",
     "standard",
     "plugin:@typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "prettier/standard",
-    "prettier/react"
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
-    "sourceType": "module"
+    "ecmaVersion": 12
   },
-  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "plugins": [
+    "@typescript-eslint",
+    "@typescript-eslint/eslint-plugin",
+    "react",
+    "prettier"
+  ],
+  "root": true,
   "rules": {
-    "react/prop-types": "off",
-    "space-before-function-paren": "off",
     "prettier/prettier": "error",
     "import/no-unresolved": "off",
+    "no-useless-constructor": "off",
+    "eqeqeq": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "space-before-function-paren": "off",
     "no-use-before-define": "off",
     "multiline-ternary": "off",
-    "generator-star-spacing": "off",
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", "internal"],
+        "groups": [
+          "builtin",
+          "external",
+          "internal"
+        ],
         "pathGroups": [
           {
             "pattern": "react",
@@ -49,7 +58,9 @@
             "position": "before"
           }
         ],
-        "pathGroupsExcludedImportTypes": ["react"],
+        "pathGroupsExcludedImportTypes": [
+          "react"
+        ],
         "newlines-between": "always",
         "alphabetize": {
           "order": "asc",

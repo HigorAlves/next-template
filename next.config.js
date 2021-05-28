@@ -1,31 +1,7 @@
-const withPlugins = require('next-compose-plugins')
-
-const nextConfig = {
+module.exports = {
   future: {
-    webpack5: false
+    webpack5: true,
   },
-  webpack: (config, { isServer }) => {
-    if (!isServer) {
-      config.node = {
-        fs: 'empty'
-      }
-    }
-    return config
-  },
-  trailingSlash: true,
-  async headers() {
-    return [
-      {
-        source: '/:path*',
-        headers: [
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY'
-          }
-        ]
-      }
-    ]
-  }
+  productionBrowserSourceMaps: true,
+  trailingSlash: true
 }
-
-module.exports = withPlugins([], nextConfig)
