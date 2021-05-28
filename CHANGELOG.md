@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/HigorAlves/next-template/compare/v1.0.0...v2.0.0) (2021-05-28)
+
+
+### :rocket: Build System
+
+* upgrade dependencies ([d1479dd](https://github.com/HigorAlves/next-template/commit/d1479dde2f9bba91574072f900de2945ae78b1fe))
+
 ## 1.0.0 (2021-02-17)
 
 
